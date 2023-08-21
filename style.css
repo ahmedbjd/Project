@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background: #1b1919e8;
+    font-family: 'Roboto', sans-serif;
+}
+.content{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+input{
+    background: #111;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin: 3px;
+    color: white;
+}
+input:focus{
+    background: black;
+    transform: scale(1.04);
+}
+#title, #count, #category, #create, #search, #deleteAll{
+    width: 100%;
+}
+.money{
+    display: flex;
+}
+.money input{
+    width: 18%; 
+}
+.search button, #create, #update, #delete, #deleteAll{
+    background: #3c0d6edf;
+    height: 25px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+}
+#create:hover, .search button:hover, #update:hover, #delete:hover, #deleteAll:hover{
+    background: #6e1190fe;
+    letter-spacing: 1px;
+}
+.search{
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between; 
+}
+.search button{
+    width: 45%;     
+}
+#total{
+    background: red;
+    margin: auto 3px;
+    color: white;
+    padding: 4px 3px;
+    border-radius: 5px;
+}
+#total::before{
+    content: "Total: " ;
+}
+table th{
+    text-transform: uppercase;
+}
+table{
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    padding: 8px;
+}
+#deleteAll{
+    margin-top: 10px;
+}

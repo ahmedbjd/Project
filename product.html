@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="head">
+            <h2>CRUDS</h2>
+            <p>PRODUCT MANAGEMENT SYSTEM</p>
+        </div>
+
+        <div class="ipt">
+            <input type="text" placeholder="title" id="title">
+            <div class="money">
+                <input onkeyup="fctTotal()" type="number" id="price" placeholder="price">
+                <input onkeyup="fctTotal()" type="number" placeholder="taxes" id="taxes">
+                <input onkeyup="fctTotal()" type="number" placeholder="ads" id="ads">
+                <input onkeyup="fctTotal()" type="number" placeholder="discount" id="discount">
+                <small id="total"></small>
+            </div>
+            <input type="number" min="1" max="100" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button onclick="create()" id="create">Create</button>
+        </div>
+        <div class="outputs">
+            <input type="text" onkeyup="searchProduct(this.value)" placeholder="Search" id="search">
+            <div class="search">
+               <button onclick="searchFct('title')" id="stitle">Search By Title</button>
+               <button onclick="searchFct('category')" id="scategory">Search By Category</button>
+            </div>
+            <div class="deleteAll">
+                
+            </div>
+          <table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+        </tr>
+        
+    </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
